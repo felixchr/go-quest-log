@@ -1,7 +1,6 @@
 package main
 
 import (
-	"bytes"
 	"fmt"
 )
 
@@ -63,6 +62,6 @@ func append(slice, data []byte) []byte {
 	return newSlice
 }
 
-func bufSplit(buffer bytes.Buffer, n int) ([]byte, []byte) {
-	return buffer[:n], buffer[n:]
-}
+// func bufSplit(buffer bytes.Buffer, n int) ([]byte, []byte) {
+// 	return buffer[:n], buffer[n:]
+// }
